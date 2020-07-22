@@ -1,2 +1,5 @@
 /demo-v0.1/.vscode
 
+/demo-v0.2/.vscode
+/demo-v0.2/__pycache__
+/demo-v0.2/test.py
