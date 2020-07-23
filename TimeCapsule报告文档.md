@@ -137,3 +137,24 @@ $$
 
 # 7/23
 
+###### 数据处理
+
+在服务器新建一个用户TimeCapsule专门处理这个项目，在Mysql新建一个用户TimeCapsule，并且privileges限制为create, insert, select。
+
+采用mysql-connector对MySQL进行读，写及建表的操作。
+
+###### 项目试部署
+
+使用virtualenv构建一个虚拟环境。
+
+采用gunicorn+flask+gevent对项目进行迅速部署，并使用nginx对其进行反向代理。
+
+编写gunicorn.conf.py文件。//gunicorn需在虚拟环境中使用。
+
+使用命令如下：
+
+```
+gunicorn -c gunicorn.conf.py start:app
+```
+
+进行部署。
