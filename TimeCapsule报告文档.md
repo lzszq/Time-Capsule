@@ -127,7 +127,7 @@ GET_open.html(no)->end_open.html
 
 生成secret-key，根据secret-key对Capsule进行索引。组成元素有(0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ )共62个字符。由于生成的secret-key长度为16，则其生成的个数为(n个元素，长度为m)
 $$
-P(key)={n^{m}}={62^{16}}
+key = {n^{m}} = {62^{16}}
 $$
 故足够支撑Capsule的管理，而每生成一个key会与原先生成的key进行查重，若重复则重新生成，虽然概率较小，为保险起见，决定牺牲查询损耗的时间来保证不会出错。
 
