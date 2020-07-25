@@ -3,3 +3,10 @@
 /demo-v0.2/.vscode
 /demo-v0.2/__pycache__
 /demo-v0.2/test.py
+
+/demo-v0.3/.vscode
+/demo-v0.3/__pycache__
+/demo-v0.3/data
+
+/venv
+
