@@ -4,5 +4,9 @@
 /demo-v0.2/__pycache__
 /demo-v0.2/test.py
 
+/demo-v0.5/.vscode
+/demo-v0.5/__pycache__
+
 /venv
 
+/demo-v0.5/privilege_key.txt

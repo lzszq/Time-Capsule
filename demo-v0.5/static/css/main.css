@@ -1,0 +1,122 @@
+/****************************************************/
+/*filename:main.css
+/*date:20200721
+/*modified by:elegance
+/****************************************************/
+
+body { 
+    padding-bottom:40px; 
+}
+
+a { 
+    color: skyblue; 
+}
+
+a:hover { 
+    color:#fff; 
+    background-color: skyblue; 
+}
+
+.home-main { 
+    width: 400px; 
+    margin: 50px auto;  
+}
+
+.logo-big { 
+    width: 400px; 
+    height: 200px; 
+    margin-bottom: 10px; 
+}
+
+.title { 
+    text-align: center; 
+}
+
+.action { 
+    padding: 0 40px; 
+}
+
+.action a { 
+    display: block; 
+    color:#333; 
+    text-align: center; 
+    font-size: 18px; 
+}
+
+.action a:hover { 
+    background-color: transparent; 
+    color: skyblue; 
+}
+
+.action a.put { 
+    float:left; 
+}
+
+.action a.open { 
+    float:right; 
+}
+
+.action a span{ 
+    display: block; 
+    font-size: 36px; 
+}
+
+.home-footer { 
+    clear: both; 
+    padding-top: 80px; 
+    text-align: center 
+}
+
+.home-footer a { 
+    color: #999; 
+}
+
+.home-footer a:hover { 
+    color: #fff; 
+}
+
+.header .logo { 
+    background-image: url('img/logo.gif') 
+}
+
+.tips { 
+    padding:0; 
+    margin:0; 
+    color:#999; 
+}
+
+.pill p, .pill pre { 
+    line-height: 1.8em; 
+}
+
+.pill .content { 
+    padding:15px 20px; 
+    border: 1px solid skyblue; 
+}
+
+input[type="button"], input[type="submit"], button, .btn {
+    background:skyblue;
+    filter:none;
+    border:1px solid skyblue;
+    color:#fff;
+}
+input[type="button"]:hover, input[type="submit"]:hover, button:hover, .btn:hover {
+    background:skyblue;
+    border:1px solid skyblue;
+    filter:none;
+    color:#fff;
+}
+input[type="button"]:active, input[type="submit"]:active, button:active, .btn:active {
+    background:skyblue;
+    filter:none;
+    border:1px solid#990033;
+    border-left-color:#660033;
+    border-top-color:#660033;
+}
+input[type="button"]:disabled, input[type="submit"]:disabled, button:disabled, .btn:disabled {
+    background:skyblue;
+    color:#AAA;
+}
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, textarea:focus {
+    border: 1px solid skyblue;
+}
