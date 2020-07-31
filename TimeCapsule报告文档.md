@@ -99,11 +99,11 @@ end_open.html=>end: Close open.html
 
 GET_open.html=>condition: GET?
 POST_open.html=>condition: POST?
-is_open_done=>condition: Put done?
+is_open_done=>condition: Open done?
 
 render_open_after_GET=>operation: Return render html
 open_done=>operation: Return successful html
-non_open_done=>operation: Return non-finished html with data that you filled
+non_open_done=>operation: Return Not Found or others
 record_open_data=>operation: Record data from POST
 
 start_open.html->GET_open.html
