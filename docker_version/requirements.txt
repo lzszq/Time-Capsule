@@ -1,0 +1,4 @@
+flask
+mysql-connector
+gunicorn
+gevent
