@@ -91,7 +91,7 @@ def open_capsule():
             html = render_template('open.html', content_type = content_type, filled_data = filled_data)
             return html
 
-        elif flag:
+        else:
             content_type = 'open'
             filled_data['key'] = 'Not Found'
             html = render_template('open.html', content_type = content_type, filled_data = filled_data)
