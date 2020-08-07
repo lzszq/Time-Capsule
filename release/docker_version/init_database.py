@@ -3,7 +3,7 @@
 
 """
 filename:init_database.py
-version: docker_verison
+version: after_modified
 author:elegance
 """
 
