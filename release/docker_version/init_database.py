@@ -104,21 +104,24 @@ def open_data(key, data_type, filled_data):
 
 def is_open_time(key):
     flag = False
-    import mysql.connector
-    from get_time import compare_time
-    conn = mysql.connector.connect(host = '172.17.0.1', port = 3306, user = 'TimeCapsule', password = 'Time', database = 'TimeCapsule')
-    cursor = conn.cursor()
+    if key == '':
+        return flag
+    else:
+        import mysql.connector
+        from get_time import compare_time
+        conn = mysql.connector.connect(host = '172.17.0.1', port = 3306, user = 'TimeCapsule', password = 'Time', database = 'TimeCapsule')
+        cursor = conn.cursor()
 
-    cursor.execute("select DATE_FORMAT(time, '%Y-%m-%d %H:%m:%S') from `Capsule` where `key` = %s;", (key,))
-    (past_time,) = cursor.fetchone()
-    
-    if compare_time(past_time):
-        flag = True
+        cursor.execute("select DATE_FORMAT(time, '%Y-%m-%d %H:%m:%S') from `Capsule` where `key` = %s;", (key,))
+        (past_time,) = cursor.fetchone()
+        
+        if compare_time(past_time):
+            flag = True
 
-    cursor.close()
-    conn.close()
+        cursor.close()
+        conn.close()
 
-    return flag
+        return flag
 
 def open_data_not_yet(key, data_type, filled_data):
     filled_data = open_data(key, data_type, filled_data)
