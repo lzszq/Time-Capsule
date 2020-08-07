@@ -58,21 +58,22 @@ def confirm_key(key):
     flag = False
     if key == '':
         return flag
-    import mysql.connector
-    conn = mysql.connector.connect(host = '172.17.0.1', port = 3306, user = 'TimeCapsule', password = 'Time', database = 'TimeCapsule')
-    cursor = conn.cursor()
+    else:
+        import mysql.connector
+        conn = mysql.connector.connect(host = '172.17.0.1', port = 3306, user = 'TimeCapsule', password = 'Time', database = 'TimeCapsule')
+        cursor = conn.cursor()
 
-    cursor.execute('select `key` from `Capsule`;')
-    keys = cursor.fetchall()
-    for (i,) in keys:
-        if i == key:
-            flag = True
-            break
+        cursor.execute('select `key` from `Capsule`;')
+        keys = cursor.fetchall()
+        for (i,) in keys:
+            if i == key:
+                flag = True
+                break
 
-    cursor.close()
-    conn.close()
+        cursor.close()
+        conn.close()
 
-    return flag
+        return flag
 
 def open_data(key, data_type, filled_data):
     import mysql.connector
