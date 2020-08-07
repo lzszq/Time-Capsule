@@ -56,7 +56,7 @@ def get_keys():
 
 def confirm_key(key):
     flag = False
-    if key == '':
+    if len(key) != 20:
         return flag
     else:
         import mysql.connector
@@ -104,7 +104,7 @@ def open_data(key, data_type, filled_data):
 
 def is_open_time(key):
     flag = False
-    if key == '':
+    if len(key) != 20:
         return flag
     else:
         import mysql.connector
