@@ -56,6 +56,8 @@ def get_keys():
 
 def confirm_key(key):
     flag = False
+    if key == '':
+        return flag
     import mysql.connector
     conn = mysql.connector.connect(host = '172.17.0.1', port = 3306, user = 'TimeCapsule', password = 'Time', database = 'TimeCapsule')
     cursor = conn.cursor()
